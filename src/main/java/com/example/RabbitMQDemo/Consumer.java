@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Consumer {
 	
 	
-	@RabbitListener(queues= {"Apu"})
+	@RabbitListener(queues= {"Queue-1"})
 	public void getMessage(Message message) throws JsonParseException, JsonMappingException, IOException{
 		
 		JSONObject arrayObject;

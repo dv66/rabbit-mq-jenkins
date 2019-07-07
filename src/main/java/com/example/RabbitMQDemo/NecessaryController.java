@@ -1,6 +1,6 @@
 package com.example.RabbitMQDemo;
 
-import com.example.entity.Person;
+//import com.example.entity.Person;Person
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,7 @@ public class NecessaryController {
 	                                .withBody(orderJson.getBytes())
 	                                .setContentType(MessageProperties.CONTENT_TYPE_JSON)
 	                                .build();
-	            this.rabbitTemplate.convertAndSend("Direct-Exchange","antu", message);
+	            this.rabbitTemplate.convertAndSend("Direct-Exchange","dipto"	, message);
 	        } catch (JsonProcessingException e) {
 	            e.printStackTrace();
 	        }
